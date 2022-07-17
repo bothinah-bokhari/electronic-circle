@@ -6,6 +6,7 @@ and opened the circuits from classes
 and I created the circuit
 then I searched about SERVO in the seach bar
 and I choosed SERVO
+and shoose the board and micro servo and connect ther together
 and downloaded the code from it 
 it will show in arduino
 that's it.
