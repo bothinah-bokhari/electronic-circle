@@ -1,29 +1,19 @@
-#include //Using servo library to control ESC
 
-Servo esc; //Creating a servo class with name as esc
+int brightness = 0;
 
 void setup()
-
 {
-
-esc.attach(8); //Specify the esc signal pin,Here as D8
-
-esc.writeMicroseconds(1000); //initialize the signal to 1000
-
-Serial.begin(9600);
-
+  pinMode(9, OUTPUT);
 }
 
 void loop()
-
 {
-
-int val; //Creating a variable val
-
-val= analogRead(A0); //Read input from analog pin a0 and store in val
-
-val= map(val, 0, 1023,1000,2000); //mapping val to minimum and maximum(Change if needed)
-
-esc.writeMicroseconds(val); //using val as the signal to esc
-
+  for (brightness = 0; brightness <= 255; brightness += 5) {
+    analogWrite(9, brightness);
+    delay(30); // Wait for 30 millisecond(s)
+  }
+  for (brightness = 255; brightness >= 0; brightness -= 5) {
+    analogWrite(9, brightness);
+    delay(30); // Wait for 30 millisecond(s)
+  }
 }
