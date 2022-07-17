@@ -1,3 +1,4 @@
+we used dc motor instead of brushless motor 
 1-using servo library to control ESC
 2-creating a servo clas with name as esc
 3-specifying the esc signal as DS
