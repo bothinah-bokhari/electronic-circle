@@ -1,0 +1,7 @@
+1-using servo library to control ESC
+2-creating a servo clas with name as esc
+3-specifying the esc signal as DS
+4-initialize the signal to 1000
+5-read the input from analog A0 and store in val
+6-maping the val to minimum and maximum input
+7-using val as the signal to esc
