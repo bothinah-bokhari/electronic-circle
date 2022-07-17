@@ -11,3 +11,4 @@ and downloaded the code from it
 it will show in arduino
 that's it.
 For a stepper motor, I put the l293D on a board and installed it with colored wires and connected the CD motor to the battery and put wires between them as well
+for brushles I wrote the algorithem in another file with aurdeni code.
